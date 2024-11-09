@@ -1,3 +1,4 @@
+import 'package:fitness_app/register1.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -49,10 +50,10 @@ class Onboarding4 extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(builder: (context) => const Onboarding4()),
-          // );
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Register1()),
+          );
         },
         backgroundColor: const Color.fromRGBO(107, 80, 210, 0.6),
         shape: RoundedRectangleBorder(
