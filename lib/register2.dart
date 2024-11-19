@@ -136,7 +136,7 @@ class _Register2State extends State {
             ),
             const SizedBox(height: 10),
 
-            // Height field
+            
             TextFormField(
               controller: heightController,
               decoration: const InputDecoration(

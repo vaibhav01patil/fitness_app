@@ -1,3 +1,4 @@
+import 'package:fitness_app/workout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -22,20 +23,28 @@ class _Register3State extends State {
               ),
               Text(
                 "What is your goal ?",
-                style:
-                    GoogleFonts.poppins(fontSize: 20, fontWeight: FontWeight.bold),
+                style: GoogleFonts.poppins(
+                    fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 10,),
-               Text(
-                 "It will help us to choose a best ",
-                 style:
-                     GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.w400),
-               ),
-              const SizedBox(height: 5,),
-              Text("program for you",
-              style:
-                     GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.w400),),
-              const SizedBox(height: 20,),
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                "It will help us to choose a best ",
+                style: GoogleFonts.poppins(
+                    fontSize: 12, fontWeight: FontWeight.w400),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Text(
+                "program for you",
+                style: GoogleFonts.poppins(
+                    fontSize: 12, fontWeight: FontWeight.w400),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -57,6 +66,8 @@ class _Register3State extends State {
               ),
               GestureDetector(
                 onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Workout()));
                 },
                 child: Container(
                   height: 50,
