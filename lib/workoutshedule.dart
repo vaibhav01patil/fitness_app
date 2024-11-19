@@ -8,7 +8,7 @@ class AddScheduleScreen extends StatefulWidget {
   State createState() => _AddScheduleScreenState();
 }
 
-class _AddScheduleScreenState extends State<AddScheduleScreen> {
+class _AddScheduleScreenState extends State {
   String selectedWorkout = "Upperbody Workout";
   TimeOfDay selectedTime = const TimeOfDay(hour: 15, minute: 30);
   DateTime selectedDate = DateTime.now();
